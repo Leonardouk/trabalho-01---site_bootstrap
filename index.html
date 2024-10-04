@@ -9,18 +9,26 @@
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <style>
-        .titulo {
-            text-align: center;
-            font-size: xx-large;
-            font-family: Copperplate;
+        body {
+            background-color: aliceblue;
         }
-        .artigo {
+        
+        article {
             text-align: center;
             font-size: x-large;
             font-family: Copperplate;
             border: solid;
             border-radius: 15%;
+            background-color: rgb(245, 255, 240);
+            height: 115%;
         }
+
+        .titulo {
+            text-align: center;
+            font-size: xx-large;
+            font-family: Copperplate;
+        }
+        
         #borda_titulo {
             border-bottom: 1.6px solid;
             border-bottom-left-radius: 50% 30%;
@@ -29,6 +37,7 @@
         }
         #borda_imagem {
             width: 100%;
+            height: 60%;
             border: solid;
             border-radius: 15%;
         }
@@ -41,23 +50,25 @@
             <div class="col-12 titulo">
                 Jogos Brasileiros
             </div>
-            <div class="col-3 mx-auto" id="borda_titulo">‎ </div>
+            <div class="col-3 mx-auto" id="borda_titulo"></div>
         </div>
     </header>
-    <div class="container">
-        <div class="row align-items-center my-5" style="height: 150px;">
-            <article class="col-md-6 p-5 artigo">
-                <div class="">
-                    <img id="borda_imagem" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2111190/header.jpg?t=1727459359" alt="ullet">
-                </div>
-                <div class="mt-4">Mullet Madjack</div>
-                <div>HAMMER95</div>
-            </article>
-            <article class="col-md-6 p-5 artigo">
-                <img id="borda_imagem" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1747760/header.jpg?t=1720002717" alt="Momodora">
-                <div class="mt-4">Momodora Moonlit Farewell</div>
-                <div>Bombservice</div>
-            </article>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-6 py-3 mb-5">
+                <article class="p-5">
+                    <img id="borda_imagem" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2111190/header.jpg?t=1727459359" alt="Mullet">
+                    <h2 class="mt-4">Mullet Madjack</h2>
+                    <p>HAMMER95</p>
+                </article>
+            </div>
+            <div class="col-md-6 py-3 mb-5">
+                <article class="p-5">
+                    <img id="borda_imagem" src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1747760/header.jpg?t=1720002717" alt="Momodora">
+                    <h2 class="mt-4">Momodora Moonlit Farewell</h2>
+                    <p>Bombservice</p>
+                </article>
+            </div>
         </div>
     </div>
 </body>
